@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 18px;background-color: #eaf0f6;font-family: sans-serif;text-align: center;margin: 0;padding: 0;"> 
+    <main style="background-color: white; max-width: 540px;width: 70vw;padding: 5vw;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+        <div>
+            <h1>Aceptacion del seguro de condominio</h1>
+        </div>
+        <div style="text-align: left;">
+            <h2>Datos para completar</h2>
+            <div style="display: flex; flex-wrap: wrap;margin: 10px 20px;font-size: 16px;text-transform: uppercase;">
+                <p style="margin: 0;">Yo </p><input type="text" style="flex: 1;"><p style="margin: 0;">con RUT Numero </p><input type="text" style="flex: 1;"><p style="margin: 0;"> domiciliado en </p><input type="text" style="flex: 2;">
+                <p style="margin: 0;">acepto en representación de la comunidad </p><input type="text" style="flex: 2;"><p style="margin: 0;"> cuya direccion es</p><input type="text" style="flex: 3;">
+                <p style="margin: 0;">, LA CONTRATACIÓN DE ESTE SEGURO DE ESPACIOS COMUNES Y TODAS LAS COBERTURAS Y EXCLUSIONES DETALLADAS EN la cotizacion no. </p><input type="number" style="flex: 1;">
+                <p style="margin: 0;"> de la aseguradora </p><input type="text" style="flex: 2;"><p style="margin: 0;">, ASÍ COMO TAMBIÉN LAS POLÍTICAS DE PRIVACIDAD ADJUNTAS EN ESTE CORREO.</p>
+            </div>
+            <div class="preferences">
+                <table>
+                        <tr>
+                            <td colspan="2">Datos de contacto</td>
+                        </tr>
+                        <tr>
+                            <td><label id="email">Correo:</label></td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label id="telefono">Teléfono:</label></td>
+                            <td><input type="tel"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Preferencias del seguro</td>
+                        <tr>
+                            <td><label for="cobertura">Selecciona la cobertura a tomar</label></td>
+                            <td>
+                                <select id="cobertura" name="cobertura">
+                                    <option value="incendio">Incendio</option>
+                                    <option value="sismo">Incendio y sismo</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="diadepago">Selecciona el dia de pago</label></td>
+                            <td>
+                                <select id="diadepago" name="diadepago">
+                                    <option value="2">2 de cada mes</option>
+                                    <option value="10">10 de cada mes</option>
+                                    <option value="18">18 de cada mes</option>
+                                    <option value="25">25 de cada mes</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="metodo">Selecciona el metodo de pago</label></td>
+                            <td>
+                                <select id="metodo" name="metodo">
+                                    <option value="2">De contado</option>
+                                    <option value="10">Pago automatico por cuenta corriente</option>
+                                    <option value="18">Pago automatico por tarjeta</option>
+                                    <option value="25">Aviso de vencimiento</option>
+                                </select></td>
+                        </tr>
+                </table>
+            </div>
+            <div class="footer">
+                <h5>Todo listo! Solo falta darle enviar correo</h5>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
